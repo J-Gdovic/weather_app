@@ -1,7 +1,12 @@
 import requests
+from dotenv import load_dotenv
+import os
 
+# Load environment variables from .env file
+load_dotenv()
 
-api_key = 'c9802cf912b771b5b06a1fb42cc83e39'
+# Get the API key from the environment variable
+api_key = os.getenv('api_key')
 
 user_input = input('Enter City: ')
 #print(user_input)
